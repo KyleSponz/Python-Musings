@@ -4,13 +4,12 @@ Taken from https://click.palletsprojects.com/en/8.0.x/
 
 import click
 
+
 @click.command()
 @click.option('--count', default=1, help='Number of greetings.')
 @click.option('--name', prompt='Your name',
               help='The person to greet.')
-@click.option('--message',  help='What you wanna say') #For right now it works with no space Can click take whitespace?
-
-
+@click.option('--message', help='What you wanna say')  # For right now it works with no space Can click take whitespace?
 def hello(count, name, message):
     """Simple program that greets NAME for a total of COUNT times."""
     for x in range(count):
@@ -18,7 +17,10 @@ def hello(count, name, message):
     c = click.get_current_context()
     message = c.params["message"]
     print("the message is " + message)
+
+
 '''
+
 Use above to save input to a variable for single threaded apps only there is another way for multi threads 
     
 import click
@@ -42,9 +44,6 @@ if __name__ == "__main__":
     
 Use this with multi thread 
 '''
-
-
-
 
 if __name__ == '__main__':
     hello()
