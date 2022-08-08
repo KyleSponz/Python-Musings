@@ -27,6 +27,7 @@ then to see existing roles
 \du
 
 then run the following query 
+
 CREATE ROLE <username> WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD '1234';
 
 
