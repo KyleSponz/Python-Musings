@@ -16,9 +16,11 @@ sudo su - postgres
 psql
 
 then to see existing roles 
+
 \du
 
 then run the following query change username and password to your needs 
+
 CREATE ROLE <username> WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD '1234'; 
 
 
