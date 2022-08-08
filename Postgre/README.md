@@ -27,8 +27,9 @@ set the following in postgresql.conf
 listen_addresses = '*'
 
 add the following to pg_hba.conf
+host    all             all             0.0.0.0/0               scram-sha-256
 
 
 citations
 https://kb.objectrocket.com/postgresql/how-to-create-a-role-in-postgres-1454
-host    all             all             0.0.0.0/0               scram-sha-256
+https://stackoverflow.com/questions/3278379/how-to-configure-postgresql-to-accept-all-incoming-connections
