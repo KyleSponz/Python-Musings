@@ -19,19 +19,22 @@ then to see existing roles
 
 \du
 
-then run the following query change username and password to your needs 
+then run the following query change username and password to your needs: 
 
 CREATE ROLE <username> WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD '1234'; 
 
 
 after that configure the installation to listen for all connections (this is for a development and testing environment ONLY)
-set the following in postgresql.conf
+set the following in postgresql.conf:
+  
 listen_addresses = '*'
 
-add the following to pg_hba.conf
+add the following to pg_hba.conf:
+  
 host    all             all             0.0.0.0/0               scram-sha-256
 
 
-citations
+citations:
+  
 https://kb.objectrocket.com/postgresql/how-to-create-a-role-in-postgres-1454
 https://stackoverflow.com/questions/3278379/how-to-configure-postgresql-to-accept-all-incoming-connections
