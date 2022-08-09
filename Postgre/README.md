@@ -1,3 +1,7 @@
+local development on mac then pip will work 
+brew install postgresql
+
+
 
 #To install a development server on ubuntu 
 
