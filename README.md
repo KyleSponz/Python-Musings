@@ -8,5 +8,10 @@ Make sure to check the readmes in each directory to setup a development environm
 
 
 To configure pip on mac m1
+
+install xtools cli
+
+install homebrew 
+
 brew install openssl 
 
