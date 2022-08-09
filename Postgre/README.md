@@ -44,5 +44,6 @@ https://kb.objectrocket.com/postgresql/how-to-create-a-role-in-postgres-1454
 
 https://stackoverflow.com/questions/3278379/how-to-configure-postgresql-to-accept-all-incoming-connections
 
-code adapted from 
+code adapted from:
+  
 https://www.postgresqltutorial.com/postgresql-python/connect/
