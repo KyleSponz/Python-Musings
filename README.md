@@ -5,3 +5,8 @@ This is a repo of different scripts to demonstrate various python functionalitie
 
 
 Make sure to check the readmes in each directory to setup a development environment 
+
+
+To configure pip on mac m1
+brew install openssl 
+
