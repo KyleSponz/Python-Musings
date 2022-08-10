@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 ###############################################################################################################
 # This is the standard way to implement databases. This file reads the associated .ini file in this repo to   #
 # configure the database connection                                                                           #
