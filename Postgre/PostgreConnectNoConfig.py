@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #############################################################################################################
 # Stripped out the configuration file logic for use when login credentials are managed by some other source #
 #############################################################################################################
@@ -14,9 +16,6 @@ def connect():
     connection = None
     try:
         params = setparams()
-
-        print('Params are')
-        print(params)
 
         print('Connection made to the postgresql database')
         connection = psycopg2.connect(**params)
